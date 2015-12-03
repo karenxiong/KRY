@@ -1,26 +1,132 @@
 html, body {
-	height: 100px;
-	padding: 0px;
+	height: auto;
+	width: auto;
+	padding: 0;
 	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
 	font-family: "Open Sans";
 	color: white;
 }
 
-#home, #aboutus, #howitworks, #features, #contactus {
-	background: url(https://static1.fitbit.com/simple.b-cssdisabled-jpg.h6a80bbc168afd96bdaabd4a65c8011d5.pack?items=%2Fcontent%2Fassets%2Fcharge%2Fimages%2Fgallery%2Fgallery-02.jpg) 100% 0 repeat fixed;
+#home {
+	background: url("../img/home.jpeg") 100% 0 no-repeat fixed;
 	min-height: 1000px;
+	max-width: 1920px;
+	width: 100%;
 	height: 1000px;
+	position: relative;
+}
+
+#home h1 {
+	height: 458px;
+	position: absolute;
+	top: 110px;
+	right: 99px;
+	width: 400px;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+#home p {
+	position: absolute;
+	top: 220px;
+	right: 99px;
+	width: 400px;
+	font-size: 20px;
+}
+
+#aboutus {
+	background: url("../img/aboutus.jpg") 100% 0 no-repeat fixed;
+	min-height: 1000px;
+	max-width: 1920px;
+	width: 100%;
+	height: 1000px;
+	position: relative;
+}
+
+#aboutus h1 {
+	height: 458px;
+	position: absolute;
+	top: 110px;
+	left: 99px;
+	width: 400px;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+#aboutus p {
+	position: absolute;
+	top: 220px;
+	left: 99px;
+	width: 400px;
+	font-size: 20px;
+}
+
+#howitworks {
+	background: url("../img/howitworks.jpg") 100% 0 no-repeat fixed;
+	min-height: 1000px;
+	max-width: 1920px;
+	width: 100%;
+	height: 1000px;
+	position: relative;
+}
+
+#howitworks h1 {
+	height: 458px;
+	position: absolute;
+	top: 110px;
+	right: 100px;
+	width: 500px;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+#howitworks p {
+	position: absolute;
+	top: 220px;
+	right: 99px;
+	width: 400px;
+	font-size: 20px;
+}
+
+#features {
+	background: url("../img/features.jpg") 100% 0 no-repeat fixed;
+	min-height: 1000px;
+	max-width: 1920px;
+	width: 100%;
+	height: 1000px;
+	position: relative;
+}
+
+#features h1 {
+	height: 458px;
+	position: absolute;
+	top: 110px;
+	right: 100px;
+	width: 500px;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+#features p {
+	position: absolute;
+	top: 220px;
+	right: 99px;
+	width: 400px;
+	font-size: 20px;
+}
+
+#contactus {
+	color: black;
+	min-height: 10px;
+	height: 1px;
 	width: 100%;
 	max-width: 1920px;
 	position: relative;
 }
 
-article {
-	height: 458px;
-	position: absolute;
+#contactus p {
 	text-align: center;
-	top: 150px;
-	width: 100%;
-	font-size: 22px;
-	font-weight: bold;
 }
