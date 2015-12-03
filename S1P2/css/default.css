@@ -1,0 +1,26 @@
+html, body {
+	height: 100px;
+	padding: 0px;
+	margin: 0 auto;
+	font-family: "Open Sans";
+	color: white;
+}
+
+#home, #aboutus, #howitworks, #features, #contactus {
+	background: url(https://static1.fitbit.com/simple.b-cssdisabled-jpg.h6a80bbc168afd96bdaabd4a65c8011d5.pack?items=%2Fcontent%2Fassets%2Fcharge%2Fimages%2Fgallery%2Fgallery-02.jpg) 100% 0 repeat fixed;
+	min-height: 1000px;
+	height: 1000px;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 150px;
+	width: 100%;
+	font-size: 22px;
+	font-weight: bold;
+}
