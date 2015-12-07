@@ -1,4 +1,4 @@
-html, body {
+* {
 	height: auto;
 	width: auto;
 	padding: 0;
@@ -7,11 +7,54 @@ html, body {
 	margin-right: auto;
 	max-width: 100%;
 	font-family: "Open Sans";
-	color: white;
+	color: black;
+	font-weight: lighter
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f35e7b;
+}
+
+.selected {
+	color: #f35e7b;
+}
+
+#logo {
+	float: left;
+	margin: 0%, 1%;
+	padding: 0;
+}
+
+.header {
+	color: black;
+	padding: 12px;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	top: 0px;
+	background-color: white;
+}
+
+#navigation ul {
+	list-style-type: none;
+	padding: 0;
+
+}
+
+#navigation ul li{
+	width: 12%;
+	text-align: center;
+	float: right;
+	padding: 0;
+
 }
 
 #home {
-	background: url("../img/home.jpeg") 100% 0 no-repeat fixed;
+	/*background: url("../img/home.jpeg") 100% 0 no-repeat fixed;*/
 	min-height: 1000px;
 	max-width: 1920px;
 	width: 100%;
@@ -22,7 +65,7 @@ html, body {
 #home h1 {
 	height: 458px;
 	position: absolute;
-	top: 110px;
+	top: 210px;
 	right: 99px;
 	width: 400px;
 	font-size: 60px;
@@ -31,14 +74,14 @@ html, body {
 
 #home p {
 	position: absolute;
-	top: 220px;
+	top: 320px;
 	right: 99px;
 	width: 400px;
 	font-size: 20px;
 }
 
 #aboutus {
-	background: url("../img/aboutus.jpg") 100% 0 no-repeat fixed;
+	background: url("../img/aboutus.jpeg") 100% 0 no-repeat fixed;
 	min-height: 1000px;
 	max-width: 1920px;
 	width: 100%;
@@ -77,7 +120,7 @@ html, body {
 	height: 458px;
 	position: absolute;
 	top: 110px;
-	right: 100px;
+	right: 10px;
 	width: 500px;
 	font-size: 60px;
 	font-weight: bold;
@@ -104,7 +147,7 @@ html, body {
 	height: 458px;
 	position: absolute;
 	top: 110px;
-	right: 100px;
+	right: 5px;
 	width: 500px;
 	font-size: 60px;
 	font-weight: bold;
