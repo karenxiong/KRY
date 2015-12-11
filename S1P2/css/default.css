@@ -8,7 +8,7 @@
 	max-width: 100%;
 	font-family: "Open Sans";
 	color: black;
-	font-weight: lighter
+	overflow-x: hidden; 
 }
 
 
@@ -24,25 +24,25 @@ a:hover {
 	color: #f35e7b;
 }
 
-#logo {
-	float: left;
-	margin: 0%, 1%;
-	padding: 0;
-}
-
 .header {
 	color: black;
-	padding: 12px;
 	width: 100%;
 	position: fixed;
-	z-index: 2;
-	top: 0px;
+	z-index: 1;
 	background-color: white;
+}
+
+#logo {
+	position: absolute;
+	width: 50%;
+	left: 35px;
+	top: -7px;
+
 }
 
 #navigation ul {
 	list-style-type: none;
-	padding: 0;
+	padding: 14.5px;
 
 }
 
@@ -52,17 +52,7 @@ a:hover {
 	float: right;
 	padding: 0;
 	font-weight: bold;
-	font-size: 16px;
-
-}
-
-.overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	z-index: 1000px
+	font-size: 13.5px;
 }
 
 #home {
@@ -74,25 +64,28 @@ a:hover {
 	position: relative;
 }
 
-.home {
-	margin-left: auto;
-	margin-right: auto;
-	width: 500px;
-	padding-top: 15%;
+.kry {
+	position: absolute;
+	top: 28%;
+	left: 35%;
+	width: 40%;
 }
 
 #home p {
+	position: absolute;
+	top: 86%;
+	right: 36%;
+	width: 40%;
+	font-size: 16px;
 	color: white;
-	font-size: 18px;
-	text-align: center;
 
 }
 
 .arrow {
-	margin-left: auto;
-	margin-right: auto;
-	width: 100px;
-	padding-top: 12.5%;
+	position: absolute;
+	width: 6%;
+	top: 79%;
+	right: 46%;
 	opacity: 0.5;
 }
 
@@ -101,7 +94,7 @@ a:hover {
 }
 
 #aboutus {
-	background: url("../img/aboutus.jpeg") 100% 0 no-repeat fixed;
+	/*background: url("../img/aboutus.jpeg") 100% 0 no-repeat fixed;*/
 	min-height: 1000px;
 	max-width: 1920px;
 	width: 100%;
@@ -110,52 +103,51 @@ a:hover {
 }
 
 #aboutus h1 {
-	height: 458px;
 	position: absolute;
-	top: 110px;
-	left: 99px;
-	width: 400px;
-	font-size: 60px;
+	top: 30%;
+	left: 60.5%;
+	width: 100%;
+	font-size: 26px;
 	font-weight: bold;
 }
 
 #aboutus p {
 	position: absolute;
-	top: 220px;
-	left: 99px;
-	width: 400px;
-	font-size: 20px;
+	top: 34%;
+	right: 9.5%;
+	width: 30%;
+	font-size: 16px;
 }
 
 #howitworks {
-	background: url("../img/howitworks.jpg") 100% 0 no-repeat fixed;
-	min-height: 1000px;
+	/*background: url("../img/howitworks.jpg") 100% 0 no-repeat fixed;*/
+	background-color: #e5e5e5;
+	min-height: 900px;
 	max-width: 1920px;
 	width: 100%;
-	height: 1000px;
+	height: 900px;
 	position: relative;
 }
 
 #howitworks h1 {
-	height: 458px;
 	position: absolute;
-	top: 110px;
-	right: 10px;
-	width: 500px;
-	font-size: 60px;
+	top: 15%;
+	left: 45%;
+	width: 100%;
+	font-size: 26px;
 	font-weight: bold;
 }
 
 #howitworks p {
 	position: absolute;
-	top: 220px;
-	right: 99px;
-	width: 400px;
-	font-size: 20px;
+	top: 20%;
+	right: 30%;
+	width: 32%;
+	font-size: 16px;
 }
 
 #features {
-	background: url("../img/features.jpg") 100% 0 no-repeat fixed;
+	/*background: url("../img/features.jpg") 100% 0 no-repeat fixed;*/
 	min-height: 1000px;
 	max-width: 1920px;
 	width: 100%;
@@ -164,44 +156,65 @@ a:hover {
 }
 
 #features h1 {
-	height: 458px;
 	position: absolute;
-	top: 110px;
-	right: 5px;
-	width: 500px;
-	font-size: 60px;
+	top: 15%;
+	left: 47%;
+	width: 100%;
+	font-size: 26px;
 	font-weight: bold;
 }
 
-#features p {
+/*#features p {
 	position: absolute;
 	top: 220px;
 	right: 99px;
 	width: 400px;
 	font-size: 20px;
-}
+}*/
 
 #contactus {
+	background-color: #e5e5e5;
 	color: black;
-	min-height: 800px;
+	min-height: 900px;
 	max-width: 1920px;
-	height: 800px;
+	height: 900px;
 	width: 100%;
 	position: relative;
 }
 
-#contactus h1 {
-	height: 458px;
+.getintouch h1 {
 	position: absolute;
-	top: 110px;
-	left: 99px;
-	width: 400px;
-	font-size: 60px;
+	top: 25%;
+	left: 16%;
+	width: 100%;
+	font-size: 26px;
 	font-weight: bold;
 }
 
-#contactus p {
-	text-align: center;
+.getintouch hr {
+	position: absolute;
+	top: 30%;
+	left: 13%;
+	width: 25%;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.getintouch p {
+	position: absolute;
+	top: 32%;
+	left: 12.5%;
+	width: 25%;
+	font-size: 16px;
+}
+
+.message h1 {
+	position: absolute;
+	top: 25%;
+	left: 65%;
+	width: 100%;
+	font-size: 26px;
+	font-weight: bold;
 }
 
 .footer {
