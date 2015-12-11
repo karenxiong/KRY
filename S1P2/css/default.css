@@ -11,15 +11,16 @@
 	font-weight: lighter
 }
 
+
 a {
 	text-decoration: none;
 }
 
-a:hover {
+.active {
 	color: #f35e7b;
 }
 
-a.current {
+a:hover {
 	color: #f35e7b;
 }
 
@@ -50,34 +51,53 @@ a.current {
 	text-align: center;
 	float: right;
 	padding: 0;
+	font-weight: bold;
+	font-size: 16px;
 
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 1000px
 }
 
 #home {
-	/*background: url("../img/home.jpeg") 100% 0 no-repeat fixed;*/
-	min-height: 1000px;
+	background-color: #382d59;
+	min-height: 900px;
 	max-width: 1920px;
 	width: 100%;
-	height: 1000px;
+	height: 900px;
 	position: relative;
 }
 
-#home h1 {
-	height: 458px;
-	position: absolute;
-	top: 210px;
-	right: 99px;
-	width: 400px;
-	font-size: 60px;
-	font-weight: bold;
+.home {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	padding-top: 15%;
 }
 
 #home p {
-	position: absolute;
-	top: 320px;
-	right: 99px;
-	width: 400px;
-	font-size: 20px;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+
+}
+
+.arrow {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	padding-top: 12.5%;
+	opacity: 0.5;
+}
+
+.arrow:hover {
+	opacity: 100;
 }
 
 #aboutus {
@@ -182,4 +202,14 @@ a.current {
 
 #contactus p {
 	text-align: center;
+}
+
+.footer {
+	clear: both;
+	text-align: center;
+	padding: 10px;
+	font-size: 12px;
+	color: #808080;
+	letter-spacing: 25;
+	font-weight: bold;
 }
