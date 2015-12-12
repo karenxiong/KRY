@@ -28,7 +28,7 @@ a:hover {
 	color: black;
 	width: 100%;
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	background-color: white;
 }
 
@@ -42,7 +42,7 @@ a:hover {
 
 #navigation ul {
 	list-style-type: none;
-	padding: 14.5px;
+	padding: 15px;
 
 }
 
@@ -173,7 +173,7 @@ a:hover {
 }*/
 
 #contactus {
-	background-color: #e5e5e5;
+	background-color: #f2f2f2;
 	color: black;
 	min-height: 900px;
 	max-width: 1920px;
@@ -185,7 +185,7 @@ a:hover {
 .getintouch h1 {
 	position: absolute;
 	top: 25%;
-	left: 16%;
+	left: 12.5%;
 	width: 100%;
 	font-size: 26px;
 	font-weight: bold;
@@ -194,7 +194,7 @@ a:hover {
 .getintouch hr {
 	position: absolute;
 	top: 30%;
-	left: 13%;
+	left: 12.5%;
 	width: 25%;
 	font-size: 26px;
 	font-weight: bold;
@@ -208,21 +208,129 @@ a:hover {
 	font-size: 16px;
 }
 
+.phone img {
+	position: absolute;
+	top: 45%;
+	left: 12.5%;
+	font-size: 16px;
+}
+
+.phone h1 {
+	position: absolute;
+	top: 46%;
+	left: 17.5%;
+	font-size: 20px;
+}
+
+.twitter img {
+	position: absolute;
+	top: 53.5%;
+	left: 12.5%;
+	font-size: 16px;
+}
+
+.twitter h1 {
+	position: absolute;
+	top: 55.5%;
+	left: 17.5%;
+	font-size: 20px;
+}
+
+.instagram img {
+	position: absolute;
+	top: 62.5%;
+	left: 12.5%;
+	font-size: 16px;
+}
+
+.instagram h1 {
+	position: absolute;
+	top: 64.5%;
+	left: 17.5%;
+	font-size: 20px;
+}
+
 .message h1 {
 	position: absolute;
 	top: 25%;
-	left: 65%;
+	left: 63%;
 	width: 100%;
 	font-size: 26px;
 	font-weight: bold;
+}
+
+.message hr {
+	position: absolute;
+	top: 30%;
+	left: 63%;
+	width: 25%;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.message form {
+	position: absolute;
+	top: 32%;
+	left: 63%;
+	width: 25%;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.text {
+	width: 356px;
+	height: 38px;
+}
+
+.message {
+	margin-top: 5px;
+	width: 356px;
+	height: 200px;
+}
+
+textarea, input {
+    border: none;
+    overflow: auto;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+   padding: 3px;
+   padding-left: 7px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   padding: 3px; 
+   padding-left: 7px; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   padding: 3px; 
+   padding-left: 7px;
+}
+
+.message::-webkit-input-placeholder {
+	padding-top: 10px;
+	padding-left: 7px;
+}
+.message:-moz-placeholder { /* Firefox 18- */
+	padding-top: 10px;
+	padding-left: 7px;
+}
+.message::-moz-placeholder { /* Firefox 19+ */
+	padding-top: 10px;
+	padding-left: 7px;
+}
+.message:-ms-input-placeholder {
+	padding-top: 10px;
+	padding-left: 7px;
 }
 
 .footer {
 	clear: both;
 	text-align: center;
 	padding: 10px;
-	font-size: 12px;
+	font-size: 10px;
 	color: #808080;
 	letter-spacing: 25;
-	font-weight: bold;
 }
