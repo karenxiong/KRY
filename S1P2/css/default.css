@@ -11,7 +11,6 @@
 	overflow-x: hidden; 
 }
 
-
 a {
 	text-decoration: none;
 	cursor:pointer ;
@@ -35,7 +34,7 @@ a:hover {
 
 #logo {
 	position: absolute;
-	width: 50%;
+	width: 40%;
 	left: 35px;
 	top: -7px;
 
@@ -95,7 +94,8 @@ a:hover {
 }
 
 #aboutus {
-	/*background: url("../img/aboutus.jpeg") 100% 0 no-repeat fixed;*/
+	background: url("../img/aboutuspage.jpg") fixed;
+	background-size: cover;
 	min-height: 1000px;
 	max-width: 1920px;
 	width: 100%;
@@ -114,25 +114,24 @@ a:hover {
 
 #aboutus p {
 	position: absolute;
-	top: 34%;
+	top: 35%;
 	right: 9.5%;
 	width: 30%;
 	font-size: 16px;
 }
 
 #howitworks {
-	/*background: url("../img/howitworks.jpg") 100% 0 no-repeat fixed;*/
-	background-color: #f2f2f2;
-	min-height: 900px;
+	background-color: #f8f8f8;
+	min-height: 1000px;
 	max-width: 1920px;
 	width: 100%;
-	height: 900px;
+	height: auto;
 	position: relative;
 }
 
 #howitworks h1 {
 	position: absolute;
-	top: 15%;
+	top: 5%;
 	left: 45%;
 	width: 100%;
 	font-size: 26px;
@@ -147,19 +146,23 @@ a:hover {
 	font-size: 16px;
 }
 
+.bracelet {
+	width: 50%;
+}
+
 #features {
-	background-color: #f8f8f8;
-	min-height: 600px;
+	background-color: #f2f2f2;
+	min-height: 800px;
 	max-width: 1920px;
 	width: 100%;
-	height: 600px;
+	height: 800px;
 	position: relative;
 }
 
 #features h1 {
 	position: absolute;
-	top: 15%;
-	left: 47.5%;
+	top: 10%;
+	left: 46%;
 	width: 100%;
 	font-size: 26px;
 	font-weight: bold;
@@ -171,35 +174,45 @@ a:hover {
 }
 
 .ficon1 {
+	display: block;
 	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
 	width: 18%;
 	top: 25%;
-	left: 11%;
+	left: 10%;
 	opacity: 0.5;
 }
 
 .ficon1:hover {
+	display: block;
 	opacity: 1;
-	width: 20%;
-	top: 20%;
-	left: 10%;
+	width: 22%;
+	top: 18%;
+	left: 8%;
 }
 
+.htext1 {
+	position: absolute;
+	top: 53%;
+	left: 14%;
+}
+ 
 .ftext1 {
 	border-radius: 25px;
 	border: 1px solid #e6e6e6;
 	padding: 15px;
 	position: absolute;
-	width: 15%;
+	width: 11%;
 	top: 60%;
-	left: 12%;
+	left: 11%;
 }
 
 .ficon2 {
 	position: absolute;
 	width: 16%;
 	top: 25%;
-	left: 27%;
+	left: 26%;
 	opacity: 0.5;
 }
 
@@ -207,7 +220,13 @@ a:hover {
 	opacity: 1;
 	width: 20%;
 	top: 18%;
-	left: 26%;
+	left: 24%;
+}
+
+.htext2 {
+	position: absolute;
+	top: 53%;
+	left: 31%;
 }
 
 .ftext2 {
@@ -215,16 +234,16 @@ a:hover {
 	border: 1px solid #e6e6e6;
 	padding: 15px;
 	position: absolute;
-	width: 15%;
+	width: 11%;
 	top: 60%;
-	left: 28%;
+	left: 26%;
 }
 
 .ficon3 {
 	position: absolute;
 	width: 16%;
 	top: 25%;
-	left: 42%;
+	left: 41%;
 	opacity: 0.5;
 }
 
@@ -232,7 +251,13 @@ a:hover {
 	opacity: 1;
 	width: 20%;
 	top: 18%;
-	left: 41%;
+	left: 39%;
+}
+
+.htext3 {
+	position: absolute;
+	top: 53%;
+	left: 42.5%;
 }
 
 .ftext3 {
@@ -240,9 +265,9 @@ a:hover {
 	border: 1px solid #e6e6e6;
 	padding: 15px;
 	position: absolute;
-	width: 15%;
+	width: 11%;
 	top: 60%;
-	left: 43%;
+	left: 41%;
 }
 
 .ficon4 {
@@ -257,7 +282,13 @@ a:hover {
 	opacity: 1;
 	width: 20%;
 	top: 18%;
-	left: 56%;
+	left: 55%;
+}
+
+.htext4 {
+	position: absolute;
+	top: 53%;
+	left: 62%;
 }
 
 .ftext4 {
@@ -265,24 +296,30 @@ a:hover {
 	border: 1px solid #e6e6e6;
 	padding: 15px;
 	position: absolute;
-	width: 15%;
+	width: 11%;
 	top: 60%;
-	left: 58%;
+	left: 57%;
 }
 
 .ficon5 {
 	position: absolute;
 	width: 19%;
 	top: 25%;
-	left: 72%;
+	left: 73%;
 	opacity: 0.5;
 }
 
 .ficon5:hover {
 	opacity: 1;
-	width: 20%;
+	width: 23%;
 	top: 20%;
 	left: 71%;
+}
+
+.htext5 {
+	position: absolute;
+	top: 53%;
+	left: 79.5%;
 }
 
 .ftext5 {
@@ -290,13 +327,97 @@ a:hover {
 	border: 1px solid #e6e6e6;
 	padding: 15px;
 	position: absolute;
-	width: 15%;
-	top: 57%;
-	left: 73%;
+	width: 11%;
+	top: 60%;
+	left: 76.5%;
+}
+
+#pre-order {
+	background-color: #f8f8f8;
+	min-height: 900px;
+	max-width: 1920px;
+	width: 100%;
+	height: 900px;
+	position: relative;
+}
+
+#pre-order img {
+	position: absolute;
+	top: 33%;
+	left: 20%;
+}
+
+#pre-order h1 {
+	position: absolute;
+	top: 30%;
+	left: 60.5%;
+}
+
+#pre-order p {
+	position: absolute;
+	top: 37%;
+	left: 52.5%;
+	font-size: 16px;
+}
+
+#pre-order h2 {
+	position: absolute;
+	top: 50%;
+	left: 52.5%;
+	font-weight: lighter;
+	font-size: 40px
+}
+
+.colour select {
+	position: absolute;
+	top: 60%;
+	left: 52.5%;
+	width: 200px;
+}
+
+.quantity select {
+	position: absolute;
+	top: 63%;
+	left: 52.5%;
+	width: 200px;
+}
+
+.preorder {
+	position: absolute;
+	display: block;
+	height: 60px;
+	top: 67%;
+	left: 52%;
+	width: 13%;
+	background: url("../img/preorder.png") no-repeat 0 0;
+}
+
+.pink, .blue, .white {
+	display: none;
+}
+
+.preorder:hover {
+	position: absolute;
+	display: block;
+	height: 60px;
+	top: 67%;
+	left: 52%;
+	width: 13%;
+	background: url("../img/preorder_hover.png") no-repeat 0 0;
+}
+
+.preorder:active {
+	position: absolute;
+	display: block;
+	height: 60px;
+	top: 67%;
+	left: 52%;
+	width: 13%;
+	background: url("../img/submitted.png") no-repeat 0 0;
 }
 
 #contactus {
-	background-color: #f2f2f2;
+	background-color: #f8f8f8;
 	color: black;
 	min-height: 900px;
 	max-width: 1920px;
@@ -335,7 +456,17 @@ a:hover {
 	position: absolute;
 	top: 45%;
 	left: 12.5%;
-	font-size: 16px;
+	/*font-size: 16px;*/
+}
+
+.phone img:hover {
+	position: absolute;
+	display: inline-block;
+	height: 60px;
+	top: 45%;
+	left: 12.5%;
+	width: 100%;
+	background: url("../img/preorder_hover.png") no-repeat 0 0;
 }
 
 .phone h1 {
@@ -456,4 +587,164 @@ textarea, input {
 	font-size: 10px;
 	color: #808080;
 	letter-spacing: 25;
+}
+
+/* ------------------------------------interactive part--------------------------------*/
+
+a.popupButton {
+	cursor: pointer;
+	color: #ff0b56;
+	font-weight: bold;
+}
+
+#popup {
+	position: fixed;
+	z-index: 30;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.3);
+}
+
+#popup .content {
+	position: relative;
+	background: #ffffff;
+	width: 80%;
+	margin: 40px auto;
+	padding: 30px;
+	border: 1px solid #cccccc;
+	border-radius: 10px;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+
+#popup .content img {
+	width: auto;
+}
+
+#popup .content .closeButton {
+	display: block;
+	background-image: url("../img/close.png");
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background-size: 40px 40px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.interactive {
+	background: radial-gradient(ellipse at center, rgba(155,155,155,1) 0%,rgba(102,102,102,1) 41%);
+	position: relative;
+	display: block;
+	height: 900px;
+}
+
+.canvas {
+	display: none;
+}
+
+canvas {
+	background: none;
+	display: block;
+	margin: 100px auto;
+}
+
+.button {
+	position: absolute;
+	top: 300px;
+	left: 400px;
+	background-color: #aaaaaa;
+	width: 250px;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+	box-shadow: 2px 2px 4px #000000;
+}
+
+.button2 {
+	background-color: #aaaaaa;
+	width: 250px;
+	font-size: 30px;
+	text-align: center;
+	margin: 300px auto;
+	padding: 10px;
+	cursor: pointer;
+	box-shadow: 2px 2px 4px #000000;
+	
+	position: absolute;
+	left: 500px;
+	top: -100px;
+	opacity: 0;
+}
+
+.front-back {
+	display: block;
+	position: relative;
+	width: 1000px;
+	height: 1000px;
+}
+
+.front-woman {
+	width: 400px;
+	position: absolute;
+	left: 500px;
+	top: 100px;	
+	opacity: 0;	
+}
+
+.front-woman img {
+	width: 500px;
+}
+
+.back-man {
+	width: 400px;
+	position: absolute;
+	left: 100px;
+	top: 10px;
+	opacity: 0;
+}
+
+.back-man img {
+	width: 400px;
+}
+
+.bracelet1 {
+	width: 100px;
+	position: absolute;
+	left: 550px;
+	top: 200px;
+	opacity: 0;
+}
+
+.bracelet1 img {
+	width: 100px;
+}
+
+
+.bling {
+	width: 100px;
+	position: absolute;
+	left: 500px;
+	top: 250px;
+	opacity: 0;
+}
+
+.bling img {
+	width: 200px;
+}
+
+
+.realheart {
+	width: 100px;
+	position: absolute;
+	left: 800px;
+	top: 50px;
+	opacity: 0;
+}
+
+.realheart img {
+	width: 100px;
 }

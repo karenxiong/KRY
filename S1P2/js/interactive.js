@@ -1,73 +1,18 @@
 $(document).ready(function() {
-	//variable used to keep track of if the navbar has been clicked
-	var navClicked = false;
-  	
-  	//monitor when the mouse enters a section to highlight navbar
-  	$('section').mouseenter(function() {
-  		//remove all highlights in navigation
-  		$('#navigation li').removeClass('active');
-
-  		//highlights the current section's name in navbar 
-    	$('#navigation a[href="#'+$(this).attr('id')+'"]').addClass('active');
-  	});
-
-  	//monitor when user clicks on the navbar
-	$('#navigation a').click(function() {
-		navClicked = true; // set tracker
-  		//remove all highlights in navigation
-  		$('#navigation a').removeClass('active');
-
-  		//highlights the clicked navbar item
-   		$(this).addClass('active');
-
-   		//scrolls to the corresponding section
-    	$('html, body').animate({ 
-    		scrollTop: $("#" + $(this).html().replace(/ /g,'').toLowerCase()).offset().top + 'px' }, 1000, 'linear');
-
-      //enable the scroll function listener when scroll animation is done
-      setTimeout(function() {navClicked = false;}, 1100);
-  	});
-
-	   //keeps track of where the user is scrolling to and updates highlights on navbar
-  	// $(document).scroll(function() {
-  	// 	// only check scrolling if the navigation animations are done
-  	// 	if (!navClicked) {
-	  // 		//remove all highlights in navigation
-	  // 		$('#navigation a').removeClass('active');
-
-	  //   	$('#navigation a.' + $('section:hover').attr('id')).addClass('active')
-	  //   };
-  	// });
-
-  // arrow scroll down effect
- 	$('.arrow').click(function(){
-        var nextSection = $(this).closest('section').next('section');
-        navClicked = true;
-
-        $('html, body').animate({
-            scrollTop: $(nextSection).offset().top
-        }, 1000);
-
-        $('.aboutus').addClass('active');
-      //enable the scroll function listener when scroll animation is done
-    	setTimeout(function() {navClicked = false;}, 1100);
+  function interactive() {
+  $(".pButton").click(function() {
+    $("#popup").fadeIn();
   });
 
-  /* feature icons animation, for all icons */
-  // mouse in to fade text in
-  $('#features a').mouseover(function(){
-    $(this).siblings('p').fadeIn('slow')
+  }
+
+  $("a.closeButton").click(function() {
+    $("#popup").fadeOut();
   });
 
-  // mouse out to fade text out
-  $('#features a').mouseout(function(){
-    $(this).siblings('p').fadeOut('fast');
-  });
 
-  // interaction
-
-  $(".button1").click(function() {
-    $(".button1").fadeOut(1000, function() {
+  $(".button").click(function() {
+    $(".button").fadeOut(1000, function() {
       $(".canvas").fadeIn(0, function() {
         // ========= MAN IMGS =========
         var man = new Image();
@@ -194,18 +139,18 @@ $(document).ready(function() {
       $('#navigation a.' + $('section:hover').attr('id')).addClass('active')
     };
 
-    if($(window).scrollTop() > 200) {
+    if($(popup).scrollTop() > 200) {
       $(".front-woman").animate({top: '0', opacity: '0.5'}, 2000);
     };
-    if($(window).scrollTop() > 500) {
+    if($(popup).scrollTop() > 500) {
       $(".back-man").animate({top: '-10px', opacity: '0.5', left: '200'}, 4000);
       $(".back-man img").animate({width: '450px'}, 4000);
     };
-    if($(window).scrollTop() > 600) {
-      $(".bracelet").animate({top: '300', opacity: '1'}, 2000);
+    if($(popup).scrollTop() > 600) {
+      $(".bracelet1").animate({top: '300', opacity: '1'}, 2000);
     };
 
-    if($(window).scrollTop() > 900) {
+    if($(popup).scrollTop() > 900) {
 
       $(".realheart").animate({opacity: '1'}, 2000, function() {
         $(".realheart img").animate({width: '120px'}, 300, function() {
@@ -227,6 +172,5 @@ $(document).ready(function() {
     //hhhhearrrrrtbeat done!
     };
   });
-
-
 });
+
