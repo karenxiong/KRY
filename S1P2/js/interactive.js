@@ -131,14 +131,6 @@ $(document).ready(function() {
 
   // ======= THE BRACELET APPEARS =======
   $(window).scroll(function() {
-    // only check scrolling if the navigation animations are done
-    if (!navClicked) {
-      //remove all highlights in navigation
-      $('#navigation a').removeClass('active');
-
-      $('#navigation a.' + $('section:hover').attr('id')).addClass('active')
-    };
-
     if($(popup).scrollTop() > 200) {
       $(".front-woman").animate({top: '0', opacity: '0.5'}, 2000);
     };

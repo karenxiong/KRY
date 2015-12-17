@@ -129,6 +129,10 @@ a:hover {
 	position: relative;
 }
 
+.bracelet{
+	width: 50%;
+}
+
 #howitworks h1 {
 	position: absolute;
 	top: 5%;
@@ -146,8 +150,36 @@ a:hover {
 	font-size: 16px;
 }
 
-.bracelet {
-	width: 50%;
+.dot1 {
+	position: absolute;
+	top: 42%;
+	right: 39%;
+	width: 2%;
+	font-size: 16px;
+}
+
+.dot1:hover {
+	background: url("../img/hover_button.png") no-repeat 0 0 ;
+	position: absolute;
+	top: 42%;
+	right: 39%;
+	width: 2%;
+}
+
+.dot2 {
+	position: absolute;
+	top: 50%;
+	right: 25.4%;
+	width: 32%;
+	font-size: 16px;
+}
+
+.dot3 {
+	position: absolute;
+	top: 60%;
+	right: 12.3%;
+	width: 32%;
+	font-size: 16px;
 }
 
 #features {
@@ -344,7 +376,7 @@ a:hover {
 #pre-order img {
 	position: absolute;
 	top: 33%;
-	left: 20%;
+	left: 24%;
 }
 
 #pre-order h1 {
@@ -392,32 +424,8 @@ a:hover {
 	background: url("../img/preorder.png") no-repeat 0 0;
 }
 
-.pink, .blue, .white {
-	display: none;
-}
-
-.preorder:hover {
-	position: absolute;
-	display: block;
-	height: 60px;
-	top: 67%;
-	left: 52%;
-	width: 13%;
-	background: url("../img/preorder_hover.png") no-repeat 0 0;
-}
-
-.preorder:active {
-	position: absolute;
-	display: block;
-	height: 60px;
-	top: 67%;
-	left: 52%;
-	width: 13%;
-	background: url("../img/submitted.png") no-repeat 0 0;
-}
-
 #contactus {
-	background-color: #f8f8f8;
+	background-color: #f2f2f2;
 	color: black;
 	min-height: 900px;
 	max-width: 1920px;
