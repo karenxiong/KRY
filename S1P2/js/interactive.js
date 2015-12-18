@@ -133,7 +133,8 @@ $(document).ready(function() {
               }
             } else {
               context.clearRect(0, 0, canvas.width, canvas.height);
-              $(".scenario").fadeOut(1000);
+              $(".scenario").animate({opacity:'0'}, 300);
+              $(".instruction").animate({opacity:'0'}, 300);
               $(".chase-fail").fadeIn(1000);
               $(".button2").fadeIn(1000, function() {
                 $(".button2").click(function() {
@@ -150,7 +151,8 @@ $(document).ready(function() {
           } else if (x > canvas.width) {
             context.clearRect(0, 0, canvas.width, canvas.height);
             context.clearRect(0, 0, canvas.width, canvas.height);
-            $(".scenario").fadeOut(1000);
+            $(".scenario").animate({opacity:'0'}, 300);
+            $(".instruction").animate({opacity:'0'}, 300);
             $(".chase-success").fadeIn(1000);
             $(".button2").fadeIn(1000, function() {
               $(".button2").click(function() {

@@ -180,15 +180,6 @@ a:hover {
 	margin-right: auto;
 }
 
-h1.itworks {
-	position: absolute;
-	top: 53%;
-	width: 100%;
-	text-align: center;
-	font-size: 26px;
-	font-weight: bold;
-}
-
 .itworksdescription {
 	position: absolute;
 	width: 500px;
@@ -496,7 +487,7 @@ a.ficton1 {
 
 .pre-order-description {
 	position: absolute;
-	top: 15%;
+	top: 22%;
 	left: 52.5%;
 	font-size: 15px;
 	width: 400px;
@@ -508,7 +499,7 @@ a.ficton1 {
 
 #pre-order h1 {
 	position: absolute;
-	top: 10%;
+	top: 17%;
 	left: 60.5%;
 }
 
@@ -612,7 +603,7 @@ a.ficton1 {
 	background-repeat: no-repeat;
 }
 
- .twitter:hover {
+.twitter:hover {
 	background-image: url("../img/twitter_hover.png");
 }
 
@@ -648,7 +639,7 @@ a.ficton1 {
 .message h1 {
 	position: absolute;
 	top: 25%;
-	left: 63%;
+	left: 60%;
 	width: 100%;
 	font-size: 26px;
 	font-weight: bold;
@@ -723,6 +714,8 @@ textarea, input {
 	position: absolute;
 	right: 5%;
 	bottom: 5%;
+	opacity: 0.5;
+	cursor: pointer;
 }
 
 .arrowUp:hover {

@@ -25,7 +25,7 @@ $(document).ready(function() {
 
   /* Email Submit Alert & rollovers */
   $("#emailSubmit").click(function() {
-    alert("Email Submitted");
+    alert("Thanks for your message! We'll get back to you as soon as we can.");
   });
 
   $("#emailSubmit").hover(
