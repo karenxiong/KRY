@@ -28,7 +28,7 @@ a:hover {
 	color: black;
 	width: 100%;
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	background-color: white;
 }
 
@@ -47,7 +47,7 @@ a:hover {
 }
 
 #navigation ul li{
-	width: 12%;
+	width: 150px;
 	text-align: center;
 	float: right;
 	padding: 0;
@@ -55,7 +55,7 @@ a:hover {
 	font-size: 13.5px;
 }
 
-#index {
+#home {
 	background-color: #382d59;
 	min-height: 900px;
 	max-width: 1920px;
@@ -111,50 +111,33 @@ a:hover {
 	position: relative;
 }
 
-#aboutus h1 {
+.content {
+	margin: auto;
+}
+
+
+#aboutus .content {
 	position: absolute;
-	top: 25%;
-	left: 69%;
-	width: 100%;
+	top: 15%;
+	right: 10%;
+	width: 380px;
+}
+
+#aboutus h1 {
+	text-align: center;
 	font-size: 28px;
 	font-weight: bold;
+	line-height: 100px;
 }
 
-.one {
-	position: absolute;
-	top: 30%;
-	right: 9.5%;
-	width: 30%;
+#aboutus p {
 	font-size: 17px;
-}
-
-.two {
-	position: absolute;
-	top: 39%;
-	right: 9.5%;
-	width: 30%;
-	font-size: 17px;
-}
-
-.three {
-	position: absolute;
-	top: 43%;
-	right: 9.5%;
-	width: 30%;
-	font-size: 17px;
-}
-
-.four {
-	position: absolute;
-	top: 54.5%;
-	right: 9.5%;
-	width: 30%;
-	font-size: 17px;
+	margin-bottom: 20px;
 }
 
 #howitworks {
 	background-color: #f8f8f8;
-	min-height: 1600px;
+	min-height: 1650px;
 	max-width: 1920px;
 	width: 100%;
 	height: auto;
@@ -162,43 +145,58 @@ a:hover {
 }
 
 .title {
-	position: absolute;
-	top: 6%;
-	left: 50%;
-	width: 50%;
+	margin-top: 120px;
+	text-align: center;
 	font-size: 26px;
 	font-weight: bold;
 }
 
 .scenario {
-	position: absolute;
-	top: 10%;
-	left: 29%;
-	width: 50%;
+	margin: auto;
+	margin-top: 20px;
+	width: 600px;
 	font-size: 16px;
+	display: block;
+	opacity: 1;
+}
+
+.instruction {
+	margin: auto;
+	margin-top: 10px;
+	color: #f35e7b;
+	width: 600px;
+	font-size: 14px;
+	opacity: 1;
+	font-weight: bold;
 }
 
 .bracelet{
 	position: absolute;
 	width: 27%;
-	top: 62%;
-	left: 39%;
+	top: 64%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.itworks {
+h1.itworks {
 	position: absolute;
-	top: 52%;
-	left: 45%;
+	top: 53%;
 	width: 100%;
+	text-align: center;
 	font-size: 26px;
 	font-weight: bold;
 }
 
-.p {
+.itworksdescription {
 	position: absolute;
-	top: 54.5%;
-	right: 30%;
-	width: 32%;
+	width: 500px;
+	top: 56%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 	font-size: 16px;
 }
 
@@ -209,8 +207,8 @@ a:hover {
 
 .dot1 {
 	position: absolute;
-	top: 69%;
-	right: 38.5%;
+	top: 70%;
+	right: 41%;
 	width: 3%;
 	font-size: 16px;
 }
@@ -219,16 +217,16 @@ a:hover {
 	border-top: thick solid #62c9d3;
 	padding: 15px;
 	position: absolute;
-	width: 10%;
-	top: 69%;
+	width: 18%;
+	top: 70%;
 	left: 63%;
 	background-color: #ebf8f9;
 }
 
 .dot2 {
 	position: absolute;
-	top: 74%;
-	right: 55.5%;
+	top: 75%;
+	right: 58%;
 	width: 3%;
 	font-size: 16px;
 }
@@ -238,16 +236,16 @@ a:hover {
 	background-color: #ebf8f9;
 	padding: 15px;
 	position: absolute;
-	width: 10%;
+	width: 18%;
 	top: 74%;
-	left: 27%;
+	left: 15%;
 }
 
 
 .dot3 {
 	position: absolute;
-	top: 80.5%;
-	right: 42%;
+	top: 82%;
+	right: 45%;
 	width: 3%;
 	font-size: 16px;
 }
@@ -257,7 +255,7 @@ a:hover {
 	background-color: #ebf8f9;
 	padding: 15px;
 	position: absolute;
-	width: 10%;
+	width: 18%;
 	top: 80.5%;
 	left: 63%;
 }
@@ -274,7 +272,7 @@ a:hover {
 #features h1 {
 	position: absolute;
 	top: 18%;
-	left: 46%;
+	text-align: center;
 	width: 100%;
 	font-size: 26px;
 	font-weight: bold;
@@ -304,8 +302,8 @@ a:hover {
 #ficon1 hr {
 	position: absolute;
 	top: 59%;
-	left: 14.5%;
-	width: 11.5%;
+	left: 13%;
+	width: 13.5%;
 }
 
 a.ficton1 {
@@ -325,15 +323,15 @@ a.ficton1 {
 .htext1 {
 	position: absolute;
 	top: 56%;
-	left: 15%;
-	color: #f35e7a;
+	left: 13%;
+	color: #62c9d3;
 }
  
 .ftext1 {
 	position: absolute;
-	width: 11%;
+	width: 200px;
 	top: 60%;
-	left: 15%;
+	left: 13%;
 }
 
 .ficon2 {
@@ -361,15 +359,15 @@ a.ficton1 {
 #ficon2 hr {
 	position: absolute;
 	top: 59%;
-	left: 29%;
-	width: 11.5%;
+	left: 28%;
+	width: 13%;
 }
 
 .ftext2 {
 	position: absolute;
-	width: 11%;
+	width: 200px;
 	top: 60%;
-	left: 29.5%;
+	left: 28%;
 }
 
 .ficon3 {
@@ -390,22 +388,22 @@ a.ficton1 {
 .htext3 {
 	position: absolute;
 	top: 56%;
-	left: 44%;
-	color: #62c9d3;
+	left: 45.5%;
+	color: #f35e7a;
 }
 
 #ficon3 hr {
 	position: absolute;
 	top: 59%;
-	left: 43.8%;
+	left: 44%;
 	width: 13.5%;
 }
 
 .ftext3 {
 	position: absolute;
-	width: 13%;
+	width: 200px;
 	top: 60%;
-	left: 44.5%;
+	left: 44%;
 }
 
 .ficon4 {
@@ -426,7 +424,7 @@ a.ficton1 {
 .htext4 {
 	position: absolute;
 	top: 56%;
-	left: 63%;
+	left: 63.5%;
 	color: #8990c2;
 }
 
@@ -434,14 +432,14 @@ a.ficton1 {
 	position: absolute;
 	top: 59%;
 	left: 60%;
-	width: 11.5%;
+	width: 12.5%;
 }
 
 .ftext4 {
 	position: absolute;
-	width: 11%;
+	width: 200px;
 	top: 60%;
-	left: 60.5%;
+	left: 60%;
 }
 
 .ficon5 {
@@ -462,7 +460,7 @@ a.ficton1 {
 .htext5 {
 	position: absolute;
 	top: 56%;
-	left: 77.4%;
+	left: 77.5%;
 	color: #62c9d3;
 }
 
@@ -470,14 +468,14 @@ a.ficton1 {
 	position: absolute;
 	top: 59%;
 	left: 75%;
-	width: 11.5%;
+	width: 12.5%;
 }
 
 .ftext5 {
 	position: absolute;
-	width: 11.5%;
+	width: 200px;
 	top: 60%;
-	left: 75.3%;
+	left: 75%;
 }
 
 #pre-order {
@@ -491,41 +489,32 @@ a.ficton1 {
 
 #pre-order img {
 	position: absolute;
-	top: 33%;
-	left: 20%;
-	width: auto;
+	top: 35%;
+	left: 16%;
+	width: 30%;
+}
+
+.pre-order-description {
+	position: absolute;
+	top: 15%;
+	left: 52.5%;
+	font-size: 15px;
+	width: 400px;
+}
+
+#pre-order p {
+	margin-bottom: 15px;
 }
 
 #pre-order h1 {
 	position: absolute;
-	top: 30%;
+	top: 10%;
 	left: 60.5%;
-}
-
-.five {
-	position: absolute;
-	top: 37%;
-	left: 52.5%;
-	font-size: 16px;
-}
-
-.six {
-	position: absolute;
-	top: 39.3%;
-	left: 52.5%;
-	font-size: 16px;
-}
-
-.seven {
-	position: absolute;
-	top: 43.5%;
-	left: 52.5%;
-	font-size: 16px;
 }
 
 #pre-order h2 {
 	position: absolute;
-	top: 58%;
+	top: 62%;
 	left: 52.5%;
 	font-weight: lighter;
 	font-size: 40px
@@ -533,26 +522,35 @@ a.ficton1 {
 
 .colour select {
 	position: absolute;
-	top: 50%;
+	top: 56%;
 	left: 52.5%;
-	width: 200px;
+	width: 250px;
 }
 
 .quantity select {
 	position: absolute;
-	top: 53%;
+	top: 59%;
 	left: 52.5%;
-	width: 200px;
+	width: 250px;
 }
 
 .preorder {
 	position: absolute;
 	display: block;
 	height: 60px;
-	top: 67%;
+	top: 70%;
 	left: 52%;
-	width: 20%;
+	width: 200px;
+	cursor: pointer;
 	background: url("../img/preorder.png") no-repeat 0 0;
+}
+
+.preorder_email {
+	position: absolute;
+	top: 50%;
+	left: 52.5%;
+	width: 18%;
+	font-size: 12px;
 }
 
 #contactus {
@@ -568,7 +566,7 @@ a.ficton1 {
 .getintouch h1 {
 	position: absolute;
 	top: 25%;
-	left: 12.5%;
+	left: 14%;
 	width: 100%;
 	font-size: 26px;
 	font-weight: bold;
@@ -577,57 +575,73 @@ a.ficton1 {
 .getintouch hr {
 	position: absolute;
 	top: 30%;
-	left: 12.5%;
+	left: 14%;
 	width: 25%;
 }
 
 .getintouch p {
 	position: absolute;
 	top: 32%;
-	left: 12.5%;
-	width: 25%;
+	left: 14%;
+	width: 300px;
 	font-size: 16px;
 }
 
 .phone img {
 	position: absolute;
 	top: 45%;
-	left: 12.5%;
+	left: 14%;
 
 }
 
 .phone h1 {
 	position: absolute;
 	top: 46%;
-	left: 17.5%;
+	left: 20%;
 	font-size: 20px;
 }
 
-.twitter img {
+.twitter {
 	position: absolute;
+	display: block;
+	width: 55px;
+	height: 55px;
 	top: 53.5%;
-	left: 12.5%;
-	font-size: 16px;
+	left: 14%;
+	background-image: url("../img/twitter.png");
+	background-repeat: no-repeat;
 }
 
-.twitter h1 {
+ .twitter:hover {
+	background-image: url("../img/twitter_hover.png");
+}
+
+.twitterMedia h1 {
 	position: absolute;
 	top: 55.5%;
-	left: 17.5%;
+	left: 20%;
 	font-size: 20px;
 }
 
-.instagram img {
+.instagram {
 	position: absolute;
+	display: block;
+	width: 55px;
+	height: 55px;
 	top: 62.5%;
-	left: 12.5%;
-	font-size: 16px;
+	left: 14%;
+	background-image: url("../img/instagram.png");
+	background-repeat: no-repeat;
 }
 
-.instagram h1 {
+.instagram:hover {
+	background-image: url("../img/instagram_hover.png");
+}
+
+.instagramMedia h1 {
 	position: absolute;
 	top: 64.5%;
-	left: 17.5%;
+	left: 20%;
 	font-size: 20px;
 }
 
@@ -643,14 +657,14 @@ a.ficton1 {
 .message hr {
 	position: absolute;
 	top: 30%;
-	left: 63%;
+	left: 60%;
 	width: 25%;
 }
 
 .message form {
 	position: absolute;
 	top: 32%;
-	left: 63%;
+	left: 60%;
 	width: 25%;
 	font-size: 26px;
 	font-weight: bold;
@@ -707,10 +721,8 @@ textarea, input {
 
 .arrowUp {
 	position: absolute;
-	width: auto;
-	top: 85%;
-	right: 2%;
-	opacity: 0.4;
+	right: 5%;
+	bottom: 5%;
 }
 
 .arrowUp:hover {
@@ -737,38 +749,45 @@ textarea, input {
 	display: block;
 	height: 1000px;
 	width: 1000px;
-	margin: 30px auto;
-
+	margin: auto;
+	margin-top: -130px;
 }
 
 .canvaschase {
 	display: none;
 }
 
+
 canvas {
 	background: none;
 	display: block;
 	position: absolute;
-	top: 100px;
+	top: 0;
 	left: 50px;
 }
 
 .button1 {
 	position: absolute;
-	top: 30%;
-	left: 40%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 25%;
 	background-image: url("../img/start.png");
 	background-repeat: no-repeat;
 	width: 250px;
 	height: 70px;
 	cursor: pointer;
-	z-index: 1;
+	z-index: 2;
 }
 
 .button2 {
 	position: absolute;
-	left: 40%;
-	top: 35%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: 25%;
 	display: none;
 
 	background-image: url("../img/continue.png");
@@ -776,32 +795,41 @@ canvas {
 	width: 250px;
 	height: 70px;
 	cursor: pointer;
-	z-index: 1;
+	z-index: 2;
 }
 
 
 .chase-fail {
 	position: absolute;
-	top: 25%;
-	left: 40%;
+	top: 18%;
+	width: 600px;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 	font-size: 16px;
 	display: none;
 }
 
 .chase-success {
 	position: absolute;
-	top: 25%;
-	left: 40%;
+	top: 18%;
+	width: 600px;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 	font-size: 16px;
 	display: none;
 }
 
 
-
 .heartpink {
 	position: absolute;
 	left: 550px;
-	top: 190px;
+	top: 80px;
 	opacity: 0;
 }
 
@@ -811,23 +839,24 @@ canvas {
 
 .braceletbutton {
 	position: absolute;
-	top: 418px;
+	top: 318px;
 	left: 695px;
 	background-image: url("../img/braceletbutton.gif");
 	background-repeat: no-repeat;
 	width: 70px;
 	height: 40px;
 	cursor: pointer;
-	opacity: 0;
 	z-index: 1;
+	opacity: 0;
 }
 
 .braceletbutton-text {
 	position: absolute;
-	top: 430px;
+	top: 330px;
 	left: 765px;
 	font-size: 16px;
 	opacity: 0;
+	color: #f35e7b;
 }
 
 span {
