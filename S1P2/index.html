@@ -8,6 +8,7 @@
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/interactive.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/default.css"/>
 	</head>
 	<body>
@@ -25,15 +26,16 @@
 					<li><a class="features">FEATURES</a></li>
 					<li><a class="howitworks">HOW IT WORKS</a></li>
 					<li><a class="aboutus">ABOUT US</a></li>
+					<li><a class="index"></a></li>
 				</ul>
 			</div>
 		</div>
 		<!-- Home -->
-		<section id="home">
+		<section id="index">
 			<div class="kry">
 				<img src="img/kry.png" alt="Kry">
-				<p>A smart bracelet for safety.</p>
 			</div>
+			<div class="slogan">A smart bracelet for women safety.</div>
 			<div class="arrow">
 				<a>
 					<img src="img/arrow.png" alt="Down Arrow">
@@ -45,44 +47,84 @@
 		<section id="aboutus">
 			<div class="content">
 			<h1>ABOUT US</h1>
-				<p>The public sphere can still be a fraught and frightening place for women to navigate - especially alone and especially at night. We aim to change that.
-				<br><br>
-				The KRY bracelet is a simple device with a big mission.
-				<br><br>	
-				Co-founders Karen Xiong, Rachel Chin, and Yi Shi leveraged their skills, resources, and energy to create a personal alarm system that is sleek, stylish, and discreet.
-				<br><br>
-				KRY is focused on developing solutions to help make a difference. We created the bracelet with the belief that it can redefine the status quo - and the belief that it is possible to create a safer future.</p>
+				<p class="one">The public sphere can still be a fraught and frightening place for women to navigate - especially alone and especially at night. We aim to change that.</p>
+				<p class="two">The KRY bracelet is a simple device with a big mission.</p>
+				<p class="three">Co-founders Karen Xiong, Rachel Chin, and Yi Shi leveraged their skills, resources, and energy to create a personal alarm system that is sleek, stylish, and discreet.</p>
+				<p class="four">KRY is focused on developing solutions to help make a difference. We created the bracelet with the belief that it can redefine the status quo - and the belief that it is possible to create a safer future.</p>
 			</div>
 		</section>
 
 		<!-- How It Works -->
 		<section id="howitworks">
 			<div class="content">
-				<h1>HOW IT WORKS</h1>
-	
-			</div>
+				<h1 class="title">Hello</h1>
+				<p class="scenario">After a long night of studying at the library, hanging out at a friend's house, or leaving a party early, walking home is often the most practical option. Yet with media reports of rampant crime alerts, few actually feel safe doing so.</p>
+				<!-- Interactive -->
+				<div class="interactive">
+					<div class="button1">
+						<span>start</span>
+					</div>
+					<div class="canvaschase">
+						<canvas id="chase">
+						</canvas>
+					</div>
+					<div class="button2">
+						<span>continue</span>
+					</div>
 
-				<p>The KRY bracelet was purposefully designed to be smart yet inconspicuous.</p>
+					<div class="chase-fail">
+						..now you have to save yourself with KRY.
+					</div>
+
+					<div class="chase-success">
+						..he's still following! Save yourself with KRY!
+					</div>
+
+
+					<div class="canvaswalk">
+						<canvas id="walk">
+						</canvas>
+					</div>
+					
+					<div class="heartpink">
+						<img src="img/heartpink.png" />
+					</div>
+
+					
+					<div class="braceletbutton">
+						<span>bb</span>
+					</div>
+
+					<div class="braceletbutton-text">
+						scroll down to learn more &#8609;
+					</div>
+
+				</div>
+
+
+				<h1 class="itworks">HOW IT WORKS</h1>
+				<p class="p">The KRY bracelet was purposefully designed to be smart yet inconspicuous. With these three basic functions, KRY helps to offer its user some peace of mind.</p>
+			</div>
 				<div class="bracelet">
 					<img src="img/bracelet.jpg" alt="Bracelet Picture">
 				</div>
 				<div>
 					<a class="dot1">
-						<img src="img/reg_button.png" alt="Blue Dot">
+						<img src="img/1-hover.png" alt="Blue Dot">
 					</a>
-						<p class="dtext1">A sensor placed along the inside of the bracelet detects a key physiological response to fear: increased heart rate.</p>
+						<p class="dtext1">The KRY bracelet is worn prior to calibrate the system and take note of the user's normal heart rate.</p>
 				</div>
 				<div>
 					<a class="dot2">
-						<img src="img/reg_button.png" alt="Blue Dot">
+						<img src="img/2-hover.png" alt="Blue Dot">
 					</a>
-						<p class="dtext2">A sensor placed along the inside of the bracelet detects a key physiological response to fear: increased heart rate.</p>
+						<p class="dtext2">Equipped with a recess button with fingerprint sensor to mute the alert in the case of a false alarm.</p>
 				</div>
 				<div>
 					<a class="dot3">
-						<img src="img/reg_button.png" alt="Blue Dot">
+						<img src="img/3-hover.png" alt="Blue Dot">
 					</a>
-						<p class="dtext3">A sensor placed along the inside of the bracelet detects a key physiological response to fear: increased heart rate.</p>
+						<p class="dtext3">When the bracelet detects a spike in heart rate indicative of panic, then the bracelet will be activated.</p>
 				</div>
 			</div>
 		</section>
@@ -91,39 +133,44 @@
 		<section id="features">
 			<div class="content">
 				<h1>FEATURES</h1>
-				<div>
+				<div id="ficon1">
 					<a class="ficon1">
 						<img src="img/heart.png" alt="Heart Sensor Icon">
 					</a>
 					<h5 class="htext1">HEART RATE MONITOR</h5>
+					<hr>
 					<p class="ftext1">A sensor placed along the inside of the bracelet detects a key physiological response to fear: increased heart rate.</p>
 				</div>
-				<div>
+				<div id="ficon2">
 					<a class="ficon2">
 						<img src="img/phone.png" alt="Phone Icon">
 					</a>
 					<h5 class="htext2">MOBILE APP</h5>
+					<hr>
 					<p class="ftext2">The KRY bracelet is accompanied by a smartphone app to help you make the call when you can't. </p>
 				</div>
-				<div>
+				<div id="ficon3">
 					<a class="ficon3">
 						<img src="img/fingerprint.png" alt="Finger Print Icon">
 					</a>
 					<h5 class="htext3">FINGERPRINT DEACTIVATION</h5>
+					<hr>
 					<p class="ftext3">False alarm? No need to fret. Just use your fingerprint for simple and secure deactivation.</p>
 				</div>
-				<div>
+				<div id="ficon4">
 					<a class="ficon4">
 						<img src="img/light.png" alt="Light Icon">
 					</a>
 					<h5 class="htext4">LED LIGHTS</h5>
+					<hr>
 					<p class="ftext4">The bracelet is equipped with lights that turn on upon activation.</p>
 				</div>
-				<div>
+				<div id="ficon5">
 					<a class="ficon5">
 						<img src="img/gps.png" alt="GPS Icon">
 					</a>
 					<h5 class="htext5">GPS LOCATION</h5>
+					<hr>
 					<p class="ftext5">The bracelet comes equipped with GPS location. Upon activation, local first responders are notified and dispatched to the user's whereabouts.</p>
 				</div>
 			</div>
@@ -134,12 +181,10 @@
 			<div class="content">
 				<h1>PRE-ORDER</h1>
 				<img id="braceletImg" src="img/black.png" alt="Black Bracelet">
-				<p>Pre-order now to be among the first to own a KRY bracelet.
-				<br>
-				Be a part of a movement towards a safer future.
-				<br><br>
-				Pre-order available for a limited time.</p>
-				<h2>$29.99</h2>
+				<p class="five">Pre-order now to be among the first to own a KRY bracelet.</p>
+				<p class="six">Be a part of a movement towards a safer future.</p>
+				<p class="seven">Pre-order available for a limited time.</p>
+					<h2 id="price">$29.99</h2>
 				<div class="colour">
 					<select id="coloursDropdown">
 						<option value="" disabled selected>Colour</option>
@@ -147,21 +192,17 @@
 						<option value="white">White</option>
 						<option value="pink">Pink</option>
 						<option value="blue">Blue</option>
+						<option value="drake">Drake</option>
 					</select>
 				</div>
 				<div class="quantity">
-					<select>
+					<select name="listingtype" id="listingtype" onchange="priceText(this);">
 						<option value="" disabled selected>Quantity</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
+						<option value="$29.99">1</option>
+						<option value="$59.98">2</option>
+						<option value="$89.97">3</option>
+						<option value="$119.96">4</option>
+						<option value="$149.95">5</option>
 					</select>
 				<div class="preorder"> 
 					<a href="#">
@@ -177,9 +218,7 @@
 				<hr>
 				<p>We'd love to hear from you. Tweet us, follow us on Instagram, or complete the following enquiry form.</p>
 				<div class="phone">
-					<a href="#">
-						<img src="img/phone_icon.png" alt="Phone Icon">
-					</a>
+					<img src="img/phone_icon.png" alt="Phone Icon">
 					<h1>012 345 6789</h1>
 				</div>
 				<div class="twitter">
@@ -207,6 +246,12 @@
 					<textarea name="message" placeholder="YOUR MESSAGE" class="message"></textarea>
 					<input type="image" name="submit" src="img/send.png" alt="Submit Button" class="submit">
 				</form>
+			</div>
+			<div class="arrowUp">
+				<a href="index.html">
+					<img src="img/top_hover.png" alt="Top Arrow">
+					<p>BACK TO TOP</p>
+				</a>
 			</div>
 		</section>
 		<!-- Footer -->
